@@ -41,5 +41,5 @@ Dockerを使用する場合には以下のコマンドを実行します。
 
 ```shell
 docker build -t nextjs-template-modern .
-docker run -v dist:/app/dist -it --name my-nextjs-template-modern nextjs-template-modern
+docker run -v dist:/app/dist -it --rm --name my-nextjs-template-modern nextjs-template-modern
 ```

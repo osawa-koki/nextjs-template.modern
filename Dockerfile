@@ -8,8 +8,7 @@ RUN yarn install
 
 # ホストのソースコードをコンテナにコピー
 COPY . .
-RUN yarn build
 
 VOLUME [ "/app/dist" ]
 
-CMD [ "tail", "-f", "/dev/null" ]
+CMD [ "yarn", "build" ]
