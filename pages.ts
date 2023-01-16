@@ -1,4 +1,3 @@
-import Setting from "./setting";
 
 const pages = [
   {
@@ -16,12 +15,6 @@ const pages = [
     path: "/contact/",
     name: "Contact",
   },
-].map((page) => {
-  return {
-    emoji: `${page.emoji}`,
-    path: `${Setting.basePath}${page.path}`,
-    name: `${page.name}`,
-  }
-});
+];
 
 export default pages;
