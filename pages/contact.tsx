@@ -24,7 +24,7 @@ export default function HelloWorld() {
           <Alert variant="info">You cliecked { count } times 🤣🤣🤣</Alert>
           <Button variant="primary" onClick={() => {setCount(count + 1)}}>Click Me {((count % 3 === 0 && count !== 0) || /3/.test(count.toString()) ? '🤪' : '😀')}</Button>
           <hr />
-          <Form.Group controlId="formBasicEmail">
+          <Form.Group controlId="formBasicEmail" className="mt-3">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" value={mail} onInput={(e) => {setMail((e.target as HTMLInputElement).value)}} />
             <Form.Text>
