@@ -34,3 +34,12 @@ yarn build
 それ以外はNextjsの公式と同じです。  
 
 `components`ディレクトリはページを表示する際の部品を管理し、`pages`はページを、`styles`はスタイルシートを管理します。  
+
+## Dockerでのビルド
+
+Dockerを使用する場合には以下のコマンドを実行します。  
+
+```shell
+docker build -t nextjs-template-modern .
+docker run -v $(pwd)/dist:/app/dist nextjs-template-modern
+```
