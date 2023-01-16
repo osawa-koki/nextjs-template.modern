@@ -18,6 +18,7 @@ const pages = [
   },
 ].map((page) => {
   return {
+    emoji: `${page.emoji}`,
     path: `${Setting.basePath}${page.path}`,
     name: `${page.name}`,
   }
