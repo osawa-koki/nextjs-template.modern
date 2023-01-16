@@ -21,7 +21,7 @@ const Layout = ({ children, title = setting.title, menu = true, footer = true }:
     <div id="Wrapper">
       { menu ? <><main>{ children }</main><Menu /></> : children }
     </div>
-    { footer && <footer><a href="https://github.com/osawa-koki">@osawa-koki</a></footer> }
+    { footer && <footer><a href="https://github.com/osawa-koki" target='_blank'>@osawa-koki</a></footer> }
   </div>
 );
 
