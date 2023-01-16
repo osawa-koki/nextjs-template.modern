@@ -34,3 +34,19 @@ yarn build
 それ以外はNextjsの公式と同じです。  
 
 `components`ディレクトリはページを表示する際の部品を管理し、`pages`はページを、`styles`はスタイルシートを管理します。  
+
+## Dockerでのビルド
+
+Dockerを使用する場合には以下のコマンドを実行します。  
+
+```shell
+docker build -t nextjs-template-modern .
+docker run -v ★カレントディレクトリ★dist:/app/dist -it --rm --name my-nextjs-template-modern nextjs-template-modern
+```
+
+distディレクトリまでの絶対パスを指定します。  
+UNIXライクなシステムでは`$(pwd)`を使用すればOKです。  
+`$(pwd)/dist`といった感じです。  
+
+Windowsでは`%cd%`で行けるはずですが、シェルシステムとバージョンによってはできないことがあります。  
+その場合には絶対パスをそのまま指定して下さい。  
