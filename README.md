@@ -1,6 +1,6 @@
 # nextjs-template.modern
 
-少しモダンなNextjsのテンプレート。  
+🍔🍔🍔 少しモダンなNextjsのテンプレート。  
 
 ## 使い方
 
