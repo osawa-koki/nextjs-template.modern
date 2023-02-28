@@ -1,5 +1,17 @@
 {
-  "private": true,
+  "name": "nextjs-template.modern",
+  "description": "My favorite Next.js project",
+  "version": "1.0.0",
+  "author": "osawa-koki",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osawa-koki/nextjs-template.modern.git"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=1.22.0"
+  },
   "scripts": {
     "dev": "yarn develop",
     "develop": "next",
