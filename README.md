@@ -50,3 +50,13 @@ UNIXライクなシステムでは`$(pwd)`を使用すればOKです。
 
 Windowsでは`%cd%`で行けるはずですが、シェルシステムとバージョンによってはできないことがあります。  
 その場合には絶対パスをそのまま指定して下さい。  
+
+## GitHubシークレットの設定
+
+GitHub Actionsで使用するシークレットを設定します。  
+これは、GitHubのリポジトリの`Settings`→`Secrets`から設定できます。  
+Depricatedなパッケージを使用している場合にその旨を通知します。  
+
+| シークレット名 | 説明 |
+| --- | --- |
+| SLACK_WEBHOOK_URL | SlackのWebhook URL |
