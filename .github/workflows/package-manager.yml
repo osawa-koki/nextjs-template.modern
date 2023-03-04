@@ -7,6 +7,18 @@ on:
   schedule:
     - cron: '0 */6 * * *'
 
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  issues: write
+  packages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
+
 env:
   project_name: nextjs-template-modern
   slack_channel: '#alert'
@@ -16,17 +28,6 @@ env:
 jobs:
   upgrade-packages:
     runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      checks: write
-      contents: write
-      deployments: write
-      issues: write
-      packages: write
-      pull-requests: write
-      repository-projects: write
-      security-events: write
-      statuses: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
